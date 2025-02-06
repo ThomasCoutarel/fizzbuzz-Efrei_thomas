@@ -38,3 +38,5 @@ on peut
 
 pour les blocages de master ca bloque l'envoie sur master et donc obliger de passer par des pull request pour mettre du code daans la master
 
+dans le dockerfile, unittest n’a pas besoin d’être spécifiquement "notifié" dans le Dockerfile, car il est intégré dans Python. 
+
