@@ -1,7 +1,7 @@
 creer un read me :
 j'ai fait des tests sur le fichier nomùmée main (exo du fizzbuzz) 
 
-ensuite  j'ai dut faire des test (avec unitest) dans le fichier nommée test_main afin de voir si tous fonctionne 
+ce fichier j'ai fait des tests (avec unitest et pytest pour avoir les 2 cas de figures) dans le fichier nommée test_main et test_fizzbuzz respectivement, j'ai aussi créer 2 branches (.
 
 ensuite j'ai fait le process git actions et j'ai configuer dans un fichier yaml permettant de verifié différent os et version  
 (matrix:
