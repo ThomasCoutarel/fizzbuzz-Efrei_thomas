@@ -1,4 +1,3 @@
-
 def fizzbuzz(n):
     result=[]
     for i in range (n):
