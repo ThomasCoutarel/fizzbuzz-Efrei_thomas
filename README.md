@@ -35,3 +35,6 @@ test_main.py          21      1    95%
 TOTAL                 54     16    70%
 
 on peut
+
+pour les blocages de master ca bloque l'envoie sur master et donc obliger de passer par des pull request pour mettre du code daans la master
+
