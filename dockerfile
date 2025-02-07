@@ -6,6 +6,4 @@ COPY . /app
 
 RUN pip install --no-cache-dir pytest
 
-RUN pytest --maxfail=1 --disable-warnings -q
-
-CMD ["python", "test_fizzbuzz.py"]
+CMD ["pytest", "test_fizzbuzz.py", "--maxfail=1", "--disable-warnings", "-q"]
