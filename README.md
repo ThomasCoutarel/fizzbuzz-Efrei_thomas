@@ -99,16 +99,6 @@ Le workflow utilise désormais une image Docker tierce pour exécuter les tests.
 
 Ajout d’une étape de build de l’image Docker dans un répertoire temporaire.
 
+J'ai du modifié légérement le code ci.yaml puisque, on a fait la suppression de la matrice (matrix.os et matrix.python-version), puisqu 'elle est inutile sur docker et on ne teste plus sur plusieurs OS (ubuntu, windows, macOS) car Docker garantit un environnement standardisé. On utilise une seule image Docker officielle Python pour exécuter les tests.
 
-
-Résumé
-
-L'ensemble de ces actions permet de garantir :
-
-Un code testé et fiable.
-
-Un processus de développement structuré avec CI/CD.
-
-Une gestion rigoureuse des contributions via PRs.
-
-Une portabilité et une reproductibilité avec Docker.
+Tous ces testes et changement sont fait  sur la branche docker, puis j'ai fait un pull request sur la branche main.
