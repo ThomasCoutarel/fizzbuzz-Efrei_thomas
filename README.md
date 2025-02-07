@@ -1,5 +1,5 @@
-creer un read me :
-j'ai fait des tests sur le fichier nomùmée main (exo du fizzbuzz) 
+# documentation / README
+J'ai fait des tests sur le fichier nomùmée main (exo du fizzbuzz) 
 
 ce fichier j'ai fait des tests (avec unitest et pytest pour avoir les 2 cas de figures) dans le fichier nommée test_main et test_fizzbuzz respectivement, j'ai aussi créer 2 branches (test_unitest et test_pytest).
 
@@ -38,3 +38,9 @@ on peut
 
 pour les blocages de master ca bloque l'envoie sur master et donc obliger de passer par des pull request pour mettre du code daans la master
 
+ensuite nous avons fait une image et conteneur pour l'executuion du code fizzbuzz et des test 
+(cependant les test que je fais depuis le debut puisque la Suppression de la matrice (matrix.os et matrix.python-version)
+On ne teste plus sur plusieurs OS (ubuntu, windows, macOS) car Docker garantit un environnement standardisé.
+On utilise une seule image Docker officielle Python pour exécuter les tests.)
+
+ensuite on psh dans la branche main.
