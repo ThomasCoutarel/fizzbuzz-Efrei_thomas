@@ -6,30 +6,15 @@ on:
 
 jobs:
   run-tests:
-    strategy:
-      fail-fast: false
-      matrix:
-        os: [ubuntu-latest, windows-latest, macOS-latest]
-        python-version:
-          - "3.10"
-          - "3.11"
-          - "3.12"
-    name: test
-    runs-on: ${{ matrix.os }}
+    name: Test in Docker
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: ${{ matrix.python-version }}
+      - name: Build Docker image
+        run: docker build -t fizzbuzz-test .
 
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-
-      - name: Run tests
-        run: |
-          python -m unittest discover
+      - name: Run tests inside Docker
+        run: docker run --rm fizzbuzz-test pytest --maxfail=1 --disable-warnings -q
