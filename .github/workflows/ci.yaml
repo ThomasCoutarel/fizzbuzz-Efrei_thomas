@@ -17,4 +17,4 @@ jobs:
         run: docker build -t fizzbuzz-test .
 
       - name: Run tests inside Docker
-        run: docker run --rm fizzbuzz-test
+        run: docker run --rm fizzbuzz-test pytest --maxfail=1 --disable-warnings -q
