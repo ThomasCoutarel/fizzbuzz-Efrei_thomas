@@ -8,4 +8,4 @@ RUN pip install --no-cache-dir pytest
 
 RUN pytest --maxfail=1 --disable-warnings -q
 
-CMD ["python", "main.py"]
+CMD ["python", "test_fizzbuzz.py"]
