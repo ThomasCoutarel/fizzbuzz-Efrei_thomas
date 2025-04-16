@@ -1,7 +1,7 @@
 from main import fizzbuzz
 
 def test_fizz():
-    assert fizzbuzz(4)[3] == "fizz"
+    assert fizzbuzz(4)[3] == "Fizz"
     assert fizzbuzz(7)[6] == "fizz"
     assert fizzbuzz(10)[9] == "fizz"
 
